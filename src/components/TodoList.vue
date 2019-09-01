@@ -2,7 +2,7 @@
   <div>
     Todo list
     <TodoItem></TodoItem>
-    <ul class="todoList">
+    <ul class="todoItems">
       <li v-for="item in 5" :key="item">
         <TodoItem></TodoItem>
       </li>
@@ -11,13 +11,13 @@
 </template>
 
 <script>
-import { Component, Vue } from "vue-property-decorator";
-import TodoItem from "@/components/TodoItem.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import TodoItem from '@/components/TodoItem.vue';
 
 @Component({
   components: {
-    TodoItem
-  }
+    TodoItem,
+  },
 })
 export default class TodoList extends Vue {}
 </script>
